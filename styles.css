@@ -23,6 +23,39 @@ p {
   font-size: 10px;
 }
 
+html {
+  font-size: 16px;
+}
+
+.section-container {
+  width: 50vw;
+  height: 70vh;
+  background-color: blue;
+
+  .box {
+    width: 40%;
+    height: 30%;
+    background-color: red;
+  }
+}
+
+.text-container {
+  font-size: 10px;
+  
+  .normal-text {
+    font-size: 15px;
+  }
+  
+  .relative-size {
+    font-size: 2em;
+  }
+
+  .html-size {
+    font-size: 2rem;
+  }
+}
+
+
 #page-footer {
   background-color: lightgray;
   margin: 20px;
@@ -34,5 +67,15 @@ p {
   }
 }
 
+@media (min-width: 500px) {
+  .section-container {
+    background-color: green;
+    width: 100%;
+  }
+}
 
-
+@media (min-width: 1000px) {
+  .section-container {
+    background-color: yellow;
+  }
+}
