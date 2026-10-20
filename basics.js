@@ -81,21 +81,21 @@ if (userAge >= 18) {
 let userCountry = "México";
 
 if (userCountry === "España") {
-  console.log("El país del usuario es España");  
+  console.log("El país del usuario es España");
 }
 
 if (10 === "10") {
-  console.log("10 es igual '10'");  
+  console.log("10 es igual '10'");
 }
 
 if (!true) {
-  console.log("La condición es verdadera");  
+  console.log("La condición es verdadera");
 }
 
 userCountry = "";
 
 if (!userCountry) {
-  console.log("El usuario no ha indicado su país");  
+  console.log("El usuario no ha indicado su país");
 }
 
 /*
@@ -113,7 +113,61 @@ true   || false
 let isTruthy = [];
 
 if (isTruthy) {
-  console.log("La condición es truthy");  
+  console.log("La condición es truthy");
 } else {
-  console.log("La condición es falsy");  
+  console.log("La condición es falsy");
 }
+
+// Objetos
+
+const computer = {
+  name: "Ordenador",
+  price: 1000,
+  isAvailable: true,
+};
+
+console.log(computer);
+console.log(computer.name);
+
+computer.price = 1500;
+
+console.log(computer);
+
+// computer.delivery = "C/ Gran vía, 123";
+// console.log(computer);
+
+const keyboard = {
+  name: "Teclado",
+  price: 50,
+  isAvailable: false,
+};
+
+console.log(keyboard);
+
+// Arrays
+
+const numArray = [10, 20, 30, 40, 50, 60];
+console.log(numArray);
+console.log(numArray[2]);
+
+console.log(numArray.length);
+let totalElems = numArray.length;
+console.log(numArray[totalElems - 1]);
+
+const countryArray = ["España", "Venezuela", "México"];
+console.log(countryArray);
+console.log(countryArray[1]);
+
+const products = [
+  computer,
+  keyboard,
+  {
+    name: "ratón",
+    price: 20,
+    isAvailable: true,
+  },
+];
+
+console.log(products);
+console.log(products[2]);
+console.log(products[2].name);
