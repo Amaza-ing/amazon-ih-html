@@ -39,7 +39,7 @@ console.log(num1);
 // Strings
 
 let food1 = "pan";
-let food2 = "queso";
+let food2 = 'queso';
 let food3 = `
 
         pizza ${food1}
@@ -171,3 +171,28 @@ const products = [
 console.log(products);
 console.log(products[2]);
 console.log(products[2].name);
+
+// Bucles
+
+for (let i = 1; i <= 10; i++) {
+  console.log(i);
+}
+
+for (let i = 20; i >= 0; i--) {
+  console.log(i);  
+}
+
+for (let i = 0; i < numArray.length; i++) {
+  console.log(numArray[i]);  
+}
+
+for (let i = 0; i < countryArray.length; i++) {
+  console.log(countryArray[i]);  
+}
+
+let counter = 1;
+
+while (counter <= 10) {
+  console.log(counter);
+  counter++;
+}
