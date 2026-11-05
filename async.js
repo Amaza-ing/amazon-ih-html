@@ -30,3 +30,30 @@ const API_URL = "https://jsonplaceholder.typicode.com/users";
 // }
 
 // getUsers();
+
+
+const CHARACTERS_API = "https://rickandmortyapi.com/api/character";
+
+async function getCharacters() {
+  try {
+    const response = await fetch(CHARACTERS_API);
+    const data = await response.json();
+
+    console.log(data);
+    console.log(data.results[0].image);
+    
+    data.results.forEach((characterObj) => {
+      const characterImage = characterObj.image;
+      const imgElement = document.createElement("img");
+
+      imgElement.setAttribute("src", characterImage);
+      imgElement.setAttribute("width", 200);
+      document.body.appendChild(imgElement);
+    })   
+
+  } catch(error) {
+    console.log("No se ha podido conectar a la API");    
+  }
+}
+
+getCharacters();
